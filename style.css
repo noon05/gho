@@ -1,0 +1,63 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    width: 300px;
+    height: 600px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    position: relative;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+.apple {
+    width: 40px;
+    height: 40px;
+    background-image: url('apple.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 1s, left 1s;
+}
+
+.tree {
+    width: 300px;
+    height: 600px;
+    background-image: url('tree.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+
+#catch-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#catch-btn:hover {
+    background-color: #45a049;
+}
